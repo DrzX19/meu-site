@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Você apertou...</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            flex-direction: column;
+            font-family: Arial;
+        }
+
+        img {
+            max-width: 70%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body onload="tocarSom()">
+
+<h1>EU FALEI PRA NÃO APERTAR</h1>
+
+<img src="foto.jpg">
+
+<audio id="som" src="som.mp3"></audio>
+
+<script>
+function tocarSom() {
+    var audio = document.getElementById("som");
+    audio.play();
+}
+</script>
+
+</body>
+</html>
